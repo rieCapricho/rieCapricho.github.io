@@ -1,14 +1,17 @@
-function showMainPage() {
-    document.getElementById('intro-page').style.display = 'none';
-    document.getElementById('main-page').style.display = 'block';
-}
-
-function toggleTheme() {
+document.getElementById('toggle-theme').addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+});
+
+function showWorks() {
+    document.getElementById('intro').classList.add('hidden');
+    document.getElementById('works').classList.remove('hidden');
 }
 
-let heartCount = 0;
-function sendHeart() {
-    heartCount++;
-    document.getElementById('heart-count').textContent = heartCount;
+function showIntro() {
+    document.getElementById('works').classList.add('hidden');
+    document.getElementById('intro').classList.remove('hidden');
 }
+
+document.getElementById('send-hearts').addEventListener('click', () => {
+    alert('❤️ Sent!');
+});

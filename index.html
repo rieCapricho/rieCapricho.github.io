@@ -3,66 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Course Portfolio - Abrienne Capricho</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <div id="intro-page">
-        <div class="intro-content">
+    <div id="sidebar">
+        <button id="toggle-theme">🌙</button>
+        <button onclick="showIntro()">Home</button>
+        <button onclick="showWorks()">My Works</button>
+        <button id="send-hearts">❤️ Send Hearts</button>
+    </div>
+
+    <div id="intro" class="page">
+        <div id="intro-content">
             <h1>Hi! I am Abrienne</h1>
-            <p>An IS student learning how to create a web page using HTML language</p>
-            <button onclick="showMainPage()">My Work</button>
+            <p>An IS student learning how to create a web page using HTML</p>
+            <button onclick="showWorks()" class="animated-btn">My Works</button>
         </div>
     </div>
-    
-    <div id="main-page" class="hidden">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#certificates">Certificates</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><button onclick="toggleTheme()">Theme</button></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <section id="home">
-            <h2>Welcome to My Digital Course Portfolio</h2>
-        </section>
-        
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="project-container">
-                <a href="CaprichoExplorePHTours.html" class="project-card">Explore PH Tours</a>
-                <a href="CaprichoCourseSchedule.html" class="project-card">2nd Term Course Schedule</a>
-                <a href="Capricho_A224_js_act1/index.html" class="project-card">JavaScript Activity 1</a>
-                <a href="Capricho_A224_JS_ACT2/index.html" class="project-card">JavaScript Activity 2</a>
-            </div>
-        </section>
-        
-        <section id="certificates">
-            <h2>Achievements & Certifications</h2>
-            <ul>
-                <li>HTML & CSS Fundamentals Certification</li>
-                <li>JavaScript Essentials Course Completion</li>
-                <li>Best Web Development Project Award</li>
-            </ul>
-        </section>
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="your-image.jpg" alt="Abrienne's Picture" class="profile-pic">
-            <p>Hi! I'm Abrienne Capricho, an IS student passionate about web development and technology.</p>
-            <button onclick="sendHeart()">Send Hearts ❤️</button>
-            <p>❤️ <span id="heart-count">0</span> Hearts</p>
-        </section>
-        
-        <footer>
-            <p>&copy; 2025 Abrienne Capricho. All rights reserved.</p>
-        </footer>
+
+    <div id="works" class="page hidden">
+        <div id="overlay">
+            <h2><a href="CaprichoExplorePHTours.html">Explore PH Tours</a></h2>
+            <h2><a href="CaprichoCourseSchedule.html">2nd Term Course Schedule</a></h2>
+            <h2><a href="Capricho_A224_js_act1/index.html">Javascript Activity 1</a></h2>
+            <h2><a href="Capricho_A224_JS_ACT2/index.html">Javascript Activity 2</a></h2>
+        </div>
     </div>
 </body>
 </html>
