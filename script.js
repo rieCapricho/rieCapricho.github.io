@@ -12,3 +12,4 @@ function sendHeart() {
     heartCount++;
     document.getElementById('heart-count').textContent = heartCount;
 }
+
