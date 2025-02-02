@@ -21,8 +21,10 @@ h1 {
 }
 
 img {
-    max-width: 150%;
-    height: 150%;
+    max-width: 200%;
+    height: 200%;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
 button {
