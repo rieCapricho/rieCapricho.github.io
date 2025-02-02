@@ -21,8 +21,8 @@ body, html {
 
 .content {
     position: absolute;
-    top: 70%;
-    right: 10%;
+    top: 150%;
+    right: 150%;
     text-align: right;
     color: black;
     font-weight: bold;
