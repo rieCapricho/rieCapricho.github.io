@@ -1,117 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Web Page</title>
-</head>
-<body>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Web Page</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        #intro {
-            background: url('claudmaru.jpg') no-repeat center center/cover;
-            color: white;
-            position: relative;
-            opacity: 0.77;
-            height: 100vh;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding-right: 140px;
-            text-align: center;
-        }
-        #intro-content {
-            max-width: 400px;
-        }
-        #intro h1 {
-            margin: 0;
-            font-size: 3rem;
-        }
-        #intro p {
-            margin: 10px 0;
-            font-size: 1.5rem;
-        }
-        #intro button {
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            border: none;
-            background-color: #333;
-            color: white;
-            cursor: pointer;
-        }
-        #works {
-            background: url('mapua.jpg') no-repeat center center/cover;
-            height: 100vh;
-            position: relative;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-        #overlay {
-            background-color: rgba(0, 50, 0, 1); /* Darkest green shape */
-            padding: 100px;
-            border: 2px solid purple;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 80%;
-            max-width: 1300px;
-            height: 60%; /* Increased height */
-            opacity: 0.85;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        #overlay h2 {
-            margin: 10px 0;
-        }
-        #overlay a {
-            display: inline;
-            color: white;
-            text-decoration: none;
-            font-size: 1.5rem;
-        }
-        #overlay a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Digital Course Portfolio - Abrienne Capricho</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div id="intro">
-        <div id="intro-content">
-            <h1>Hi! I am Abrienne</h1>
-            <p>An IS student learning how to create a web page using HTML language</p>
-            <button onclick="showWorks()">My Works</button>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="intro">
+        <div class="intro-content">
+            <h1>Hi! I'm Abrienne Capricho</h1>
+            <p>An IS student passionate about web development and technology.</p>
+            <button onclick="scrollToSection('projects')">View My Work</button>
         </div>
-    </div>
-    <div id="works">
-        <div id="overlay">
-            <h2><a href="CaprichoExplorePHTours.html">Explore PH Tours</a></h2>
-            <h2><a href="CaprichoCourseSchedule.html">2nd Term Course Schedule</a></h2>
-            <h2><a href="Capricho_A224_js_act1\index.html">Javascript Activity 1</a></h2>
-            <h2><a href="Capricho_A224_JS_ACT2\index.html">Javascript Activity 2</a></h2>
-            
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <a href="CaprichoExplorePHTours.html" class="project-card">Explore PH Tours</a>
+            <a href="CaprichoCourseSchedule.html" class="project-card">2nd Term Course Schedule</a>
+            <a href="Capricho_A224_js_act1/index.html" class="project-card">JavaScript Activity 1</a>
+            <a href="Capricho_A224_JS_ACT2/index.html" class="project-card">JavaScript Activity 2</a>
         </div>
-    </div>
-
-    <script>
-        function showWorks() {
-            document.getElementById('intro').style.display = 'none';
-            document.getElementById('works').style.display = 'flex';
-        }
-    </script>
+    </section>
+    
+    <section id="achievements">
+        <h2>Achievements & Certifications</h2>
+        <ul>
+            <li>HTML & CSS Fundamentals Certification</li>
+            <li>JavaScript Essentials Course Completion</li>
+            <li>Best Web Development Project Award</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: abrienne@example.com</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Abrienne Capricho. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
