@@ -9,20 +9,20 @@ document.querySelectorAll(".sidebar li").forEach(item => {
         document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
         this.classList.add("active");
 
-        document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
+        document.querySelectorAll("body > div").forEach(page => page.classList.add("hidden"));
 
         const pageId = this.getAttribute("data-page") + "-page";
         const pageElement = document.getElementById(pageId);
 
         if (pageElement) {
             pageElement.classList.remove("hidden");
-            history.pushState({ page: pageId }, pageId, `#${pageId}`);
+            history.pushState({ page: pageId }, pageId, #${pageId});
         }
     });
 });
 
 window.addEventListener("popstate", function(event) {
-    document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
+    document.querySelectorAll("body > div").forEach(page => page.classList.add("hidden"));
 
     if (event.state && event.state.page) {
         document.getElementById(event.state.page).classList.remove("hidden");
