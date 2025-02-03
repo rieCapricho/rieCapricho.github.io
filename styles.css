@@ -252,6 +252,38 @@ video {
     background: #555b63;
 }
 
+/* Ensure sidebar remains visible */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background-color: #3c434a;
+    color: white;
+    padding-top: 50px;
+    z-index: 100;
+}
+
+/* Sidebar List */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 20px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Ensure Sidebar Stays Visible */
+.sidebar .active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Mode Toggle Container */
 .mode-toggle {
     display: flex;
@@ -259,9 +291,10 @@ video {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    margin-left: 200px;
 }
 
-/* Common button styles */
+/* Button Styling */
 .mode-btn {
     font-size: 1.8em;
     font-weight: bold;
