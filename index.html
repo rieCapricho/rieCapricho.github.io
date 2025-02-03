@@ -8,9 +8,34 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <div class="landing">
-        <h1 class="title">WELCOME TO MY <br> DIGITAL COURSE PORTFOLIO</h1>
+    
+    <!-- Landing Page -->
+    <div id="landing-page" class="page">
+        <h1 class="landing-text">WELCOME TO MY <br> DIGITAL COURSE PORTFOLIO</h1>
+        <img src="1.jpg" alt="Malayan Colleges Mindanao" class="landing-image">
         <button id="enterBtn">ENTER</button>
     </div>
+
+    <!-- Home Page -->
+    <div id="home-page" class="page hidden">
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="mapuavid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li class="active"><i class="icon-home"></i> HOME</li>
+                <li><i class="icon-briefcase"></i> WORKS</li>
+                <li><i class="icon-user"></i> ABOUT ME</li>
+                <li><i class="icon-settings"></i> SETTINGS</li>
+            </ul>
+        </div>
+
+        <div class="top-right">Home</div>
+    </div>
+
 </body>
 </html>

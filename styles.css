@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body, html {
@@ -10,39 +11,97 @@ body, html {
     overflow: hidden;
 }
 
-.landing {
-    background: url('MAPUA\ front.jpg') no-repeat center center/cover;
-    width: 100%;
+/* HIDE PAGES INITIALLY */
+.hidden {
+    display: none;
+}
+
+/* LANDING PAGE */
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
-.title {
+.landing-text {
     position: absolute;
-    top: 17%; 
-    left: 3%; 
+    top: 10%;
+    left: 5%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
     text-align: left;
-    font-size: 4.5em;
-    font-weight: bold;
-    color: black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-button {
+.landing-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 18px 50px; 
-    font-size: 1.8em; 
-    font-weight: bold;
-    background-color: #d7e3fc;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
+    z-index: -1;
 }
 
-button:hover {
-    background-color: #a3c2f3;
+#enterBtn {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* HOME PAGE */
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background-color: #3c434a;
+    color: white;
+    padding-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 20px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
