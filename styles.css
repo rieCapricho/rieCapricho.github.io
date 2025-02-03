@@ -301,15 +301,15 @@ video {
 
 /* Sidebar Logo Styling */
 .sidebar-logo {
-    text-align: center; /* Centers the logo */
-    padding: 20px 0; /* Adds spacing around the logo */
+    text-align: center;
+    padding: 20px 0; 
 }
 
 .sidebar-logo img {
     width: 100%;
-    max-width: 150px; /* Prevents the image from being too large */
-    display: block; /* Ensures proper positioning */
-    margin: 0 auto; /* Centers it horizontally */
+    max-width: 200px;
+    display: block; 
+    margin: 0 auto;
 }
 
 
