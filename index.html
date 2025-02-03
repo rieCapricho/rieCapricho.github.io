@@ -9,11 +9,13 @@
 </head>
 <body>
 
+    <!-- Landing Page -->
     <div class="landing">
         <h1 class="title">WELCOME TO MY <br> DIGITAL COURSE PORTFOLIO</h1>
         <button id="enterBtn">ENTER</button>
     </div>
 
+    <!-- Home Page -->
     <div id="home-page" class="hidden">
         <div class="video-container">
             <video autoplay loop muted>
@@ -34,8 +36,19 @@
         <div class="top-right">Home</div>
     </div>
 
+    <!-- Works Page with Sidebar -->
     <div id="works-page" class="hidden">
-        <h1>Works</h1>
+        <div class="sidebar">
+            <ul>
+                <li data-page="home"><i class="icon-home"></i> HOME</li>
+                <li class="active" data-page="works"><i class="icon-briefcase"></i> WORKS</li>
+                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
+                <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
+            </ul>
+        </div>
+
+        <div class="top-right">Works</div>
+
         <div class="works-container">
             <div class="work-item">
                 <img src="ph tours.png" alt="Explore PH Tours">
@@ -56,8 +69,8 @@
         </div>
     </div>
 
-       <!-- About Me Page -->
-       <div id="about-page" class="hidden">
+    <!-- About Me Page -->
+    <div id="about-page" class="hidden">
         <div class="sidebar">
             <ul>
                 <li data-page="home"><i class="icon-home"></i> HOME</li>
@@ -83,8 +96,6 @@
             </div>
         </div>
     </div>
-
-
 
 </body>
 </html>
