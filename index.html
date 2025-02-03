@@ -94,13 +94,24 @@
         </ul>
     </div>
 
-    <div class="top-right">Settings</div>
-
-    <div class="mode-toggle">
-        <button id="nightMode" class="mode-btn night">🌙 NIGHT</button>
-        <button id="dayMode" class="mode-btn day">☀️ DAY</button>
+    <div id="settings-page" class="hidden">
+        <div class="sidebar">
+            <ul>
+                <li data-page="home"><i class="icon-home"></i> HOME</li>
+                <li data-page="works"><i class="icon-briefcase"></i> WORKS</li>
+                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
+                <li class="active" data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
+            </ul>
+        </div>
+    
+        <div class="top-right">Settings</div>
+    
+        <div class="mode-toggle">
+            <button id="nightMode" class="mode-btn night">🌙 NIGHT</button>
+            <button id="dayMode" class="mode-btn day">☀️ DAY</button>
+        </div>
     </div>
-</div>
+    
 
 
 </body>
