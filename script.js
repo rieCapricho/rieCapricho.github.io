@@ -41,11 +41,19 @@ window.addEventListener("load", function() {
     }
 });
 
-// Heart Button Counter
-let heartCount = 0;
-document.getElementById("heartBtn").addEventListener("click", function() {
-    heartCount++;
-    document.getElementById("heartCount").innerText = heartCount;
+// Get heart button and counter
+const heartBtn = document.getElementById("heartBtn");
+const heartCountSpan = document.getElementById("heartCount");
+
+// Load saved heart count from localStorage
+let heartCount = localStorage.getItem("heartCount") ? parseInt(localStorage.getItem("heartCount")) : 0;
+heartCountSpan.textContent = heartCount; // Display saved count
+
+// Event listener for heart button click
+heartBtn.addEventListener("click", function() {
+    heartCount++; // Increment count
+    heartCountSpan.textContent = heartCount; // Update display
+    localStorage.setItem("heartCount", heartCount); // Save to localStorage
 });
 
 
