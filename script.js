@@ -21,43 +21,16 @@ document.querySelectorAll(".sidebar li").forEach(item => {
     });
 });
 
-window.addEventListener("popstate", function(event) {
-    document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
-
-    if (event.state && event.state.page) {
-        document.getElementById(event.state.page).classList.remove("hidden");
-    } else {
-        document.querySelector(".landing").classList.remove("hidden");
-    }
-});
-
+// Ensure sidebar stays visible and reloads with the correct page
 window.addEventListener("load", function() {
-    if (location.hash === "#home-page") {
-        document.querySelector(".landing").classList.add("hidden");
-        document.getElementById("home-page").classList.remove("hidden");
-    } else if (location.hash === "#works-page") {
-        document.querySelector(".landing").classList.add("hidden");
-        document.getElementById("works-page").classList.remove("hidden");
-    }
+    const page = location.hash ? location.hash.substring(1) : "home-page";
+    document.querySelector(".landing").classList.add("hidden");
+    document.getElementById(page).classList.remove("hidden");
+
+    document.querySelectorAll(".sidebar li").forEach(li => {
+        li.classList.remove("active");
+        if (li.getAttribute("data-page") === page.replace("-page", "")) {
+            li.classList.add("active");
+        }
+    });
 });
-
-// Get heart button and counter
-const heartBtn = document.getElementById("heartBtn");
-const heartCountSpan = document.getElementById("heartCount");
-
-// Load saved heart count from localStorage
-let heartCount = localStorage.getItem("heartCount") ? parseInt(localStorage.getItem("heartCount")) : 0;
-heartCountSpan.textContent = heartCount; // Display saved count
-
-// Event listener for heart button click
-heartBtn.addEventListener("click", function() {
-    heartCount++; // Increment count
-    heartCountSpan.textContent = heartCount; // Update display
-    localStorage.setItem("heartCount", heartCount); // Save to localStorage
-});
-
-
-
-
-
-
