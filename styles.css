@@ -312,10 +312,10 @@ video {
     margin: 0 auto;
 }
 
-/* Settings Page Layout - Centered */
+/* Settings Page Layout */
 .settings-container {
-    width: 50%;
-    margin: 180px auto; /* Adjusted to center */
+    width: 60%;
+    margin: 100px auto;
     text-align: center;
     background: rgba(240, 248, 255, 0.95);
     padding: 40px;
@@ -323,20 +323,20 @@ video {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Toggle Switch Container - Centered */
+/* Toggle Switch Container */
 .toggle-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 1.2em;
     font-weight: bold;
-    gap: 20px; /* Spacing between text & switch */
-    padding: 20px;
+    margin-top: 20px;
+    padding: 15px;
     background: #e3e3e3;
     border-radius: 10px;
 }
 
-/* Dark Mode Toggle Switch */
+/* Toggle Switch */
 .switch {
     position: relative;
     display: inline-block;
@@ -382,18 +382,21 @@ input:checked + .slider:before {
     transform: translateX(24px);
 }
 
-/* DARK MODE STYLES */
+/* Dark Mode Styling */
 .dark-mode {
     background-color: #1e1e1e;
     color: white;
 }
 
-/* Update About Me Text to White in Dark Mode */
-.dark-mode .about-content h1,
-.dark-mode .about-content p {
+.dark-mode .settings-container {
+    background: #2c2c2c;
     color: white;
 }
 
+.dark-mode .toggle-container {
+    background: #444;
+    color: white;
+}
 
 
 
