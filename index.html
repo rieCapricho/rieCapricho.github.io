@@ -9,23 +9,11 @@
 </head>
 <body>
 
-    <!-- Landing Page -->
     <div class="landing">
         <h1 class="title">WELCOME TO MY <br> DIGITAL COURSE PORTFOLIO</h1>
         <button id="enterBtn">ENTER</button>
     </div>
 
-    <!-- Sidebar (Fixed on all pages) -->
-    <div class="sidebar hidden">
-        <ul>
-            <li class="active" data-page="home"><i class="icon-home"></i> HOME</li>
-            <li data-page="works"><i class="icon-briefcase"></i> WORKS</li>
-            <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
-            <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
-        </ul>
-    </div>
-
-    <!-- Home Page -->
     <div id="home-page" class="hidden">
         <div class="video-container">
             <video autoplay loop muted>
@@ -33,12 +21,21 @@
                 Your browser does not support the video tag.
             </video>
         </div>
+
+        <div class="sidebar">
+            <ul>
+                <li class="active" data-page="home"><i class="icon-home"></i> HOME</li>
+                <li data-page="works"><i class="icon-briefcase"></i> WORKS</li>
+                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
+                <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
+            </ul>
+        </div>
+
         <div class="top-right">Home</div>
     </div>
 
-    <!-- Works Page -->
     <div id="works-page" class="hidden">
-        <div class="top-right">Works</div>
+        <h1>Works</h1>
         <div class="works-container">
             <div class="work-item">
                 <img src="ph tours.png" alt="Explore PH Tours">
@@ -63,7 +60,7 @@
     <div id="about-page" class="hidden">
         <div class="top-right">About Me</div>
         <div class="about-container">
-            <img src="about_bg.jpg" class="about-bg">
+            <img src="mapua.jpg" class="about-bg">
             <div class="about-content">
                 <img src="profpic.jpg" class="profile-img">
                 <h1>HI! I’M ABRIENNE</h1>
