@@ -267,6 +267,11 @@ video {
     display: block;
 }
 
+/* Hide main content on the landing page */
+#main-content {
+    display: none;
+}
+
 
 
 
