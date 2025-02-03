@@ -19,7 +19,7 @@ body, html {
 
 .title {
     position: absolute;
-    top: 5%; /* Moves it to the uppermost part */
+    top: 10%; /* Moves it to the uppermost part */
     left: 3%; /* Moves it to the leftmost part */
     text-align: left;
     font-size: 2.8em;
