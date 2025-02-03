@@ -252,5 +252,70 @@ video {
     background: #555b63;
 }
 
+/* Mode Toggle Container */
+.mode-toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Common button styles */
+.mode-btn {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 18px 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin: 15px 0;
+}
+
+/* Night Mode Button */
+.night {
+    background-color: #1d3557;
+    color: white;
+}
+
+/* Day Mode Button */
+.day {
+    background-color: #ffcc00;
+    color: black;
+}
+
+/* Hover effects */
+.night:hover {
+    background-color: #457b9d;
+}
+
+.day:hover {
+    background-color: #ffdb4d;
+}
+
+/* DARK MODE STYLES */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .sidebar {
+    background-color: #2c2c2c;
+}
+
+.dark-mode .top-right {
+    color: white;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+
 
 

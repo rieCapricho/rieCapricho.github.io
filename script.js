@@ -56,6 +56,27 @@ heartBtn.addEventListener("click", function() {
     localStorage.setItem("heartCount", heartCount); // Save to localStorage
 });
 
+// Get mode buttons
+const nightModeBtn = document.getElementById("nightMode");
+const dayModeBtn = document.getElementById("dayMode");
+
+// Check localStorage for user preference
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+}
+
+// Event Listeners for Mode Switching
+nightModeBtn.addEventListener("click", function() {
+    document.body.classList.add("dark-mode");
+    localStorage.setItem("theme", "dark"); // Save preference
+});
+
+dayModeBtn.addEventListener("click", function() {
+    document.body.classList.remove("dark-mode");
+    localStorage.setItem("theme", "light"); // Save preference
+});
+
+
 
 
 
