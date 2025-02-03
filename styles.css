@@ -20,7 +20,7 @@ body, html {
 }
 
 .content {
-    position: absolute;
+   
     top: 3%; /* Moves text to the uppermost part */
     left: 5%; /* Aligns text to the leftmost side */
     text-align: left;
