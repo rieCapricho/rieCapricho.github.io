@@ -21,10 +21,10 @@ body, html {
 
 .title {
     position: absolute;
-    top: 2%;
+    top: 18%;
     left: 3%;
     text-align: left;
-    font-size: 2.8em;
+    font-size: 4.5em;
     font-weight: bold;
     color: black;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
