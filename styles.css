@@ -7,35 +7,30 @@
 body, html {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .landing {
-    background: url('MAPUA\ front.jpg') no-repeat center center/cover;
+    background: url('1.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.overlay {
+.title {
     position: absolute;
-    top: 3%; /* Moves text to the uppermost part */
-    left: 5%; /* Aligns text to the leftmost side */
+    top: 2%; /* Moves it to the uppermost part */
+    left: 3%; /* Moves it to the leftmost part */
     text-align: left;
-    color: black;
+    font-size: 2.8em;
     font-weight: bold;
-}
-
-h1 {
-    font-size: 3em;
+    color: black;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 button {
     position: absolute;
-    bottom: 12%; /* Keeps button lower and centered */
+    bottom: 8%; /* Moves button lower */
     left: 50%;
     transform: translateX(-50%);
     padding: 14px 30px;
