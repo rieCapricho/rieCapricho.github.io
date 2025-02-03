@@ -190,7 +190,7 @@ video {
     justify-content: flex-start;
     position: absolute;
     width: 65%;
-    left: 58%; /* Moved more to the right */
+    left: 65%; /* Moved more to the right */
     top: 50%;
     transform: translate(-50%, -50%);
     background: rgba(240, 248, 255, 0.95);
@@ -241,7 +241,7 @@ video {
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     transition: background 0.3s ease;
-    margin-top: 20px; /* Moved further down */
+    margin-top: 40px; /* Moved further down */
 }
 
 #heartBtn:hover {
