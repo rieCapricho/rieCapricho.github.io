@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
 <body>
 
     <div class="landing">
@@ -5,7 +14,6 @@
         <button id="enterBtn">ENTER</button>
     </div>
 
-    <!-- Home Page -->
     <div id="home-page" class="hidden">
         <div class="video-container">
             <video autoplay loop muted>
@@ -26,19 +34,8 @@
         <div class="top-right">Home</div>
     </div>
 
-    <!-- Works Page (Sidebar Added) -->
     <div id="works-page" class="hidden">
-        <div class="sidebar">
-            <ul>
-                <li data-page="home"><i class="icon-home"></i> HOME</li>
-                <li class="active" data-page="works"><i class="icon-briefcase"></i> WORKS</li>
-                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
-                <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
-            </ul>
-        </div>
-
-        <div class="top-right">Works</div>
-
+        <h1>Works</h1>
         <div class="works-container">
             <div class="work-item">
                 <img src="ph tours.png" alt="Explore PH Tours">
@@ -59,8 +56,8 @@
         </div>
     </div>
 
-    <!-- About Me Page -->
-    <div id="about-page" class="hidden">
+       <!-- About Me Page -->
+       <div id="about-page" class="hidden">
         <div class="sidebar">
             <ul>
                 <li data-page="home"><i class="icon-home"></i> HOME</li>
@@ -69,11 +66,13 @@
                 <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
             </ul>
         </div>
-
+        
         <div class="top-right">About Me</div>
 
+        <!-- Full background with 30% transparency -->
         <img src="mapua.jpg" class="full-bg">
 
+        <!-- Light blue container for content -->
         <div class="about-container">
             <img src="profpic.jpg" class="profile-img">
             <div class="about-content">
@@ -85,4 +84,7 @@
         </div>
     </div>
 
+
+
 </body>
+</html>
