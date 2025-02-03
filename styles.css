@@ -103,9 +103,9 @@ video {
 .works-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; /* Increase spacing between items */
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    margin-top: 20px;
 }
 
 #works-page {
@@ -124,7 +124,7 @@ video {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius:50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
