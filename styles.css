@@ -108,6 +108,13 @@ video {
     margin-top: 20px;
 }
 
+#works-page {
+    background-color: #b0c4de; /* Light blue */
+    height: 100vh; /* Ensures it covers the whole page */
+    width: 100%;
+    position: absolute;
+}
+
 .work-item {
     text-align: center;
     width: 200px;
@@ -148,7 +155,7 @@ video {
     width: 18%;
     height: 100%;
     background-color: #3c434a;
-    color:#007bff;
+    color: white;
     padding-top: 50px;
 }
 
