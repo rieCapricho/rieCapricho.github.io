@@ -14,7 +14,7 @@
         <button id="enterBtn">ENTER</button>
     </div>
 
-    <div id="home-page" class="hidden">
+    <div class="container hidden" id="home-page">
         <div class="video-container">
             <video autoplay loop muted>
                 <source src="mapuavid.mp4" type="video/mp4">
@@ -34,8 +34,18 @@
         <div class="top-right">Home</div>
     </div>
 
-    <div id="works-page" class="hidden">
-        <h1>Works</h1>
+    <div class="container hidden" id="works-page">
+        <div class="sidebar">
+            <ul>
+                <li data-page="home"><i class="icon-home"></i> HOME</li>
+                <li class="active" data-page="works"><i class="icon-briefcase"></i> WORKS</li>
+                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
+                <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
+            </ul>
+        </div>
+
+        <div class="top-right">Works</div>
+
         <div class="works-container">
             <div class="work-item">
                 <img src="ph tours.png" alt="Explore PH Tours">

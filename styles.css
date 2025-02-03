@@ -8,6 +8,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: #b0c4de; /* Matching Works page background */
 }
 
 .landing {
@@ -17,51 +18,9 @@ body, html {
     position: relative;
 }
 
-.title {
-    position: absolute;
-    top: 18%;
-    left: 3%;
-    text-align: left;
-    font-size: 4.5em;
-    font-weight: bold;
-    color: black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-button {
-    position: absolute;
-    bottom: 6%; 
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 18px 50px;
-    font-size: 1.8em;
-    font-weight: bold;
-    background-color: #d7e3fc;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #a3c2f3;
-}
-
-.hidden {
-    display: none;
-}
-
-.video-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container {
+    display: flex;
+    height: 100vh;
 }
 
 .sidebar {
@@ -105,7 +64,8 @@ video {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    flex-grow: 1;
 }
 
 .work-item {
@@ -139,4 +99,8 @@ video {
 
 .work-item h2 a:hover {
     color: #007bff;
+}
+
+.hidden {
+    display: none;
 }
