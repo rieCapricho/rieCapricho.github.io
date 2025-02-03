@@ -7,63 +7,14 @@
 body, html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-}
-
-.landing {
-    background: url('MAPUA front.jpg') no-repeat center center/cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.title {
-    position: absolute;
-    top: 18%;
-    left: 3%;
-    text-align: left;
-    font-size: 4.5em;
-    font-weight: bold;
-    color: black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-button {
-    position: absolute;
-    bottom: 6%; 
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 18px 50px;
-    font-size: 1.8em;
-    font-weight: bold;
-    background-color: #d7e3fc;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #a3c2f3;
+    background-color: #b0c4de;
 }
 
 .hidden {
     display: none;
 }
 
-.video-container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Sidebar */
 .sidebar {
     position: fixed;
     left: 0;
@@ -83,8 +34,6 @@ video {
 .sidebar li {
     padding: 20px;
     font-size: 1.2em;
-    display: flex;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -92,51 +41,64 @@ video {
     background: rgba(255, 255, 255, 0.2);
 }
 
-.top-right {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.works-container {
+/* About Me Page */
+.about-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    align-items: center;
     justify-content: center;
-    margin-top: 20px;
-}
-
-.work-item {
-    text-align: center;
-    width: 200px;
-}
-
-.work-item img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
 }
 
-.work-item img:hover {
-    transform: scale(1.05);
+.about-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: -1;
 }
 
-.work-item h2 {
-    font-size: 1.2em;
-    margin-top: 10px;
+.profile-img {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 
-.work-item h2 a {
-    text-decoration: none;
-    color: black;
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h1 {
+    font-size: 2em;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.work-item h2 a:hover {
-    color: #007bff;
+.about-content p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#heartBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background: #3c434a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#heartBtn:hover {
+    background: #555b63;
 }
