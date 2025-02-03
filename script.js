@@ -1,7 +1,6 @@
 document.getElementById("enterBtn").addEventListener("click", function() {
     history.pushState({ page: "home" }, "Home", "#home");
     document.querySelector(".landing").classList.add("hidden");
-    document.getElementById("main-content").style.display = "block";
     document.getElementById("home-page").classList.remove("hidden");
 });
 

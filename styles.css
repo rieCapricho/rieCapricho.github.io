@@ -252,25 +252,6 @@ video {
     background: #555b63;
 }
 
-/* Logo Container */
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-}
-
-/* Logo Image */
-.logo {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-}
-
-/* Hide main content on the landing page */
-#main-content {
-    display: none;
-}
 
 
 
