@@ -21,9 +21,9 @@ body, html {
 
 .content {
     position: absolute;
-    top: 3%; /* Pushed to the uppermost part */
-    right: 5%; /* Aligned to the rightmost side */
-    text-align: right;
+    top: 3%; /* Moves text to the uppermost part */
+    left: 5%; /* Aligns text to the leftmost side */
+    text-align: left;
     color: black;
     font-weight: bold;
 }
@@ -35,7 +35,7 @@ h1 {
 
 button {
     position: absolute;
-    bottom: 12%; /* Lower and centered */
+    bottom: 12%; /* Keeps button lower and centered */
     left: 50%;
     transform: translateX(-50%);
     padding: 14px 30px;
