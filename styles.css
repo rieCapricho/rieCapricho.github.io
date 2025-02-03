@@ -19,10 +19,10 @@ body, html {
 
 .title {
     position: absolute;
-    top: 17%; /* Moves it to the uppermost part */
+    top: 20%; /* Moves it to the uppermost part */
     left: 3%; /* Moves it to the leftmost part */
     text-align: left;
-    font-size: 2.8em;
+    font-size: 3.5em;
     font-weight: bold;
     color: black;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
