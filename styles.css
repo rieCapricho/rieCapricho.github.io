@@ -185,36 +185,6 @@ button:hover {
 }
 
 
-/* Sidebar */
-.sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 18%;
-    height: 100%;
-    background-color: #3c434a;
-    color: white;
-    padding-top: 50px;
-    z-index: 10;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar li {
-    padding: 20px;
-    font-size: 1.3em; /* Increased text size */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.sidebar .active {
-    background: rgba(255, 255, 255, 0.2);
-}
-
 /* Full-page background with 30% transparency */
 .full-bg {
     position: fixed;
