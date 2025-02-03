@@ -8,19 +8,7 @@ body, html {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: #b0c4de; /* Matching Works page background */
-}
-
-.landing {
-    background: url('MAPUA front.jpg') no-repeat center center/cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
+    background-color: #b0c4de;
 }
 
 .sidebar {
@@ -32,6 +20,7 @@ body, html {
     background-color: #3c434a;
     color: white;
     padding-top: 50px;
+    z-index: 10;
 }
 
 .sidebar ul {
@@ -64,8 +53,7 @@ body, html {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: 40px;
-    flex-grow: 1;
+    margin-top: 20px;
 }
 
 .work-item {
@@ -99,8 +87,4 @@ body, html {
 
 .work-item h2 a:hover {
     color: #007bff;
-}
-
-.hidden {
-    display: none;
 }
