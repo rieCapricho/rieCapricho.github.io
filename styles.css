@@ -141,6 +141,36 @@ video {
     color: #007bff;
 }
 
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 18%;
+    height: 100%;
+    background-color: #3c434a;
+    color: white;
+    padding-top: 50px;
+    z-index: 10;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 20px;
+    font-size: 1.3em; /* Increased text size */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar .active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
 /* Full-page background with 30% transparency */
 .full-bg {
     position: fixed;
@@ -153,67 +183,68 @@ video {
     z-index: -1;
 }
 
-/* Light blue container for content */
+/* Bigger Light Blue Box */
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content inside */
+    justify-content: flex-start;
     position: absolute;
-    width: 70%;
-    left: 50%;
+    width: 65%;
+    left: 55%;
     top: 50%;
-    transform: translate(-50%, -50%); /* Center it properly */
-    background: rgba(240, 248, 255, 0.95); /* Light blue background */
-    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: rgba(240, 248, 255, 0.95);
+    padding: 40px;
     border-radius: 15px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Profile Picture */
+/* Bigger Profile Picture */
 .profile-img {
-    width: 170px;
-    border-radius: 10px;
-    margin-right: 25px;
+    width: 250px; /* Increased size */
+    border-radius: 15px;
+    margin-right: 35px;
 }
 
-/* Text Styling */
+/* Bigger Text Content */
 .about-content {
-    max-width: 550px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .about-content h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .about-content p {
-    font-size: 1.2em;
-    margin-bottom: 15px;
-    line-height: 1.5;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-/* Send Hearts Button */
+/* Bigger Send Hearts Button */
 #heartBtn {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
     background: #3c434a;
     color: white;
-    padding: 12px 25px;
+    padding: 15px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     transition: background 0.3s ease;
 }
 
 #heartBtn:hover {
     background: #555b63;
 }
+
 
