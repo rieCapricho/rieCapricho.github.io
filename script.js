@@ -56,7 +56,7 @@ heartBtn.addEventListener("click", function() {
     localStorage.setItem("heartCount", heartCount); // Save to localStorage
 });
 
-// Get Dark Mode Toggle Switch
+// Get toggle button
 const darkModeToggle = document.getElementById("darkModeToggle");
 
 // Check if Dark Mode was previously enabled
@@ -75,9 +75,6 @@ darkModeToggle.addEventListener("change", function () {
         localStorage.setItem("theme", "light"); // Save preference
     }
 });
-
-
-
 
 
 

@@ -312,77 +312,90 @@ video {
     margin: 0 auto;
 }
 
-/* Settings Page - Centered */
+/* Settings Page Layout */
 .settings-container {
-    width: 50%;
-    margin: 180px auto; /* Moves it to center */
+    width: 60%;
+    margin: 100px auto;
     text-align: center;
     background: rgba(240, 248, 255, 0.95);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-/* Toggle Switch - Centered */
+/* Toggle Switch Container */
 .toggle-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px; /* Space between text & switch */
     font-size: 1.2em;
     font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
     background: #e3e3e3;
-    padding: 15px 20px;
     border-radius: 10px;
 }
 
 /* Toggle Switch */
-.toggle-container input {
-    appearance: none;
+.switch {
+    position: relative;
+    display: inline-block;
     width: 50px;
     height: 25px;
-    background: #ccc;
-    border-radius: 25px;
-    position: relative;
-    outline: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    align-items: center;
 }
 
-/* Toggle Knob */
-.toggle-container input::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: white;
-    border-radius: 50%;
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
     position: absolute;
-    top: 2.5px;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
     left: 3px;
-    transition: transform 0.3s ease;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
 }
 
-/* Dark Mode - When Checked */
-.toggle-container input:checked {
-    background: #1d3557;
+input:checked + .slider {
+    background-color: #1d3557;
 }
 
-/* Move Toggle Knob Right When Checked */
-.toggle-container input:checked::before {
-    transform: translateX(25px);
+input:checked + .slider:before {
+    transform: translateX(24px);
 }
 
-/* DARK MODE STYLES */
+/* Dark Mode Styling */
 .dark-mode {
     background-color: #1e1e1e;
     color: white;
 }
 
-/* Update About Me Text to White in Dark Mode */
-.dark-mode .about-content h1,
-.dark-mode .about-content p {
+.dark-mode .settings-container {
+    background: #2c2c2c;
+    color: white;
+}
+
+.dark-mode .toggle-container {
+    background: #444;
     color: white;
 }
 
