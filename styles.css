@@ -79,7 +79,7 @@ video {
     width: 800px;
     position: absolute; 
     top: 50%;
-    left: 65%;
+    left: 70%;
     transform: translate(-50%, -50%);
     font-size: 3.5em; /* Adjust for size */
     font-family: 'Times New Roman', serif; /* Similar to Mapúa */
