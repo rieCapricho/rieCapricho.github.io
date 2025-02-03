@@ -56,6 +56,25 @@ heartBtn.addEventListener("click", function() {
     localStorage.setItem("heartCount", heartCount); // Save to localStorage
 });
 
+// Get toggle button
+const darkModeToggle = document.getElementById("darkModeToggle");
+
+// Check if Dark Mode was previously enabled
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    darkModeToggle.checked = true;
+}
+
+// Toggle Dark Mode
+darkModeToggle.addEventListener("change", function () {
+    if (this.checked) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark"); // Save preference
+    } else {
+        document.body.classList.remove("dark-mode");
+        localStorage.setItem("theme", "light"); // Save preference
+    }
+});
 
 
 
