@@ -227,7 +227,7 @@ video {
     line-height: 1.8;
 }
 
-/* Bigger Send Hearts Button - Moved further down */
+/* Send Hearts Button - Centered & Moved Further Below */
 #heartBtn {
     display: flex;
     align-items: center;
@@ -242,7 +242,10 @@ video {
     cursor: pointer;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     transition: background 0.3s ease;
-    margin-top: 60px; /* Moved further down */
+
+    margin: 50px auto 0; /* Centers the button and moves it down */
+    display: block;
+    text-align: center;
 }
 
 #heartBtn:hover {
