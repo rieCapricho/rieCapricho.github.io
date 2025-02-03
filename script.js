@@ -1,6 +1,6 @@
 document.getElementById("enterBtn").addEventListener("click", function() {
+    history.pushState({ page: "home" }, "Home", "#home");
     document.querySelector(".landing").classList.add("hidden");
-    document.querySelector(".sidebar").classList.remove("hidden");
     document.getElementById("home-page").classList.remove("hidden");
 });
 
@@ -9,25 +9,34 @@ document.querySelectorAll(".sidebar li").forEach(item => {
         document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
         this.classList.add("active");
 
-        document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
+        document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
 
         const pageId = this.getAttribute("data-page") + "-page";
-        document.getElementById(pageId).classList.remove("hidden");
+        const pageElement = document.getElementById(pageId);
+
+        if (pageElement) {
+            pageElement.classList.remove("hidden");
+            history.pushState({ page: pageId }, pageId, `#${pageId}`);
+        }
     });
 });
 
-// Heart Button Counter
-let heartCount = 0;
-document.getElementById("heartBtn").addEventListener("click", function() {
-    heartCount++;
-    document.getElementById("heartCount").innerText = heartCount;
+window.addEventListener("popstate", function(event) {
+    document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
+
+    if (event.state && event.state.page) {
+        document.getElementById(event.state.page).classList.remove("hidden");
+    } else {
+        document.querySelector(".landing").classList.remove("hidden");
+    }
 });
 
-// Light/Dark Mode Toggle
-document.getElementById("toggleDark").addEventListener("click", function() {
-    document.body.classList.add("dark-mode");
-});
-
-document.getElementById("toggleLight").addEventListener("click", function() {
-    document.body.classList.remove("dark-mode");
+window.addEventListener("load", function() {
+    if (location.hash === "#home-page") {
+        document.querySelector(".landing").classList.add("hidden");
+        document.getElementById("home-page").classList.remove("hidden");
+    } else if (location.hash === "#works-page") {
+        document.querySelector(".landing").classList.add("hidden");
+        document.getElementById("works-page").classList.remove("hidden");
+    }
 });

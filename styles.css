@@ -7,17 +7,20 @@
 body, html {
     width: 100%;
     height: 100%;
-    background-color: #b0c4de;
+    overflow: hidden;
+    background-color: #b0c4de; /* Matching Works page background */
 }
 
-.hidden {
-    display: none;
-}
-
-.full-bg {
+.landing {
+    background: url('MAPUA front.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
-    object-fit: cover;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
 }
 
 .sidebar {
@@ -39,6 +42,8 @@ body, html {
 .sidebar li {
     padding: 20px;
     font-size: 1.2em;
+    display: flex;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -54,44 +59,48 @@ body, html {
     font-weight: bold;
 }
 
-/* Works Page */
 .works-container {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    flex-grow: 1;
 }
 
 .work-item {
     text-align: center;
-    width: 250px;
+    width: 200px;
 }
 
-/* About Me Page */
-.about-bg {
+.work-item img {
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    opacity: 0.7;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.profile-img {
-    width: 150px;
-    border-radius: 50%;
+.work-item img:hover {
+    transform: scale(1.05);
 }
 
-#heartBtn {
-    font-size: 1.5em;
+.work-item h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
-/* Settings Page */
-.toggle-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.work-item h2 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
-#toggleDark, #toggleLight {
-    font-size: 1.5em;
-    padding: 10px 20px;
+.work-item h2 a:hover {
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
 }
