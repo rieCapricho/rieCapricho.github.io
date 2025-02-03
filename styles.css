@@ -289,6 +289,18 @@ video {
     background: #555b63;
 }
 
+/* Sidebar Logo Styling */
+.sidebar-logo {
+    text-align: center; /* Centers the logo */
+    padding: 20px 0; /* Adds spacing around the logo */
+}
+
+.sidebar-logo img {
+    width: 80%; /* Adjust the size as needed */
+    max-width: 150px; /* Prevents the image from being too large */
+    display: block; /* Ensures proper positioning */
+    margin: 0 auto; /* Centers it horizontally */
+}
 
 
 
