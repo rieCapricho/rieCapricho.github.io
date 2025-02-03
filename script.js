@@ -1,6 +1,6 @@
 document.getElementById("enterBtn").addEventListener("click", function() {
-    history.pushState({ page: "home" }, "Home", "#home");
     document.querySelector(".landing").classList.add("hidden");
+    document.querySelector(".sidebar").classList.remove("hidden");
     document.getElementById("home-page").classList.remove("hidden");
 });
 
@@ -12,16 +12,11 @@ document.querySelectorAll(".sidebar li").forEach(item => {
         document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
 
         const pageId = this.getAttribute("data-page") + "-page";
-        const pageElement = document.getElementById(pageId);
-
-        if (pageElement) {
-            pageElement.classList.remove("hidden");
-            history.pushState({ page: pageId }, pageId, `#${pageId}`);
-        }
+        document.getElementById(pageId).classList.remove("hidden");
     });
 });
 
-// Heart Button Click Counter
+// Heart Button Counter
 let heartCount = 0;
 document.getElementById("heartBtn").addEventListener("click", function() {
     heartCount++;
@@ -29,6 +24,10 @@ document.getElementById("heartBtn").addEventListener("click", function() {
 });
 
 // Light/Dark Mode Toggle
-document.getElementById("toggleTheme").addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
+document.getElementById("toggleDark").addEventListener("click", function() {
+    document.body.classList.add("dark-mode");
+});
+
+document.getElementById("toggleLight").addEventListener("click", function() {
+    document.body.classList.remove("dark-mode");
 });

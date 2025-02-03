@@ -7,60 +7,16 @@
 body, html {
     width: 100%;
     height: 100%;
-    overflow: hidden;
-}
-
-.landing {
-    background: url('MAPUA\ front.jpg') no-repeat center center/cover;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-}
-
-.title {
-    position: absolute;
-    top: 18%;
-    left: 3%;
-    text-align: left;
-    font-size: 4.5em;
-    font-weight: bold;
-    color: black;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-}
-
-button {
-    position: absolute;
-    bottom: 6%; 
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 18px 50px;
-    font-size: 1.8em;
-    font-weight: bold;
-    background-color: #d7e3fc;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #a3c2f3;
+    background-color: #b0c4de;
 }
 
 .hidden {
     display: none;
 }
 
-.video-container {
-    position: fixed;
+.full-bg {
     width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-video {
-    width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -83,8 +39,6 @@ video {
 .sidebar li {
     padding: 20px;
     font-size: 1.2em;
-    display: flex;
-    align-items: center;
     cursor: pointer;
 }
 
@@ -100,107 +54,44 @@ video {
     font-weight: bold;
 }
 
+/* Works Page */
 .works-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 .work-item {
     text-align: center;
-    width: 200px;
+    width: 250px;
 }
 
-.work-item img {
+/* About Me Page */
+.about-bg {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+    height: 100vh;
+    position: absolute;
+    opacity: 0.7;
 }
 
-.work-item img:hover {
-    transform: scale(1.05);
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
 }
 
-.work-item h2 {
-    font-size: 1.2em;
-    margin-top: 10px;
+#heartBtn {
+    font-size: 1.5em;
 }
 
-.work-item h2 a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;* {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body, html {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        background-color: #b0c4de;
-    }
-    
-    /* Sidebar - Always Visible */
-    .sidebar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 18%;
-        height: 100%;
-        background-color: #3c434a;
-        color: white;
-        padding-top: 50px;
-        z-index: 10;
-    }
-    
-    .sidebar ul {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .sidebar li {
-        padding: 20px;
-        font-size: 1.2em;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-    }
-    
-    .sidebar .active {
-        background: rgba(255, 255, 255, 0.2);
-    }
-    
-    /* About Me */
-    .about-bg {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        opacity: 0.7;
-    }
-    
-    #heartBtn {
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 1.5em;
-    }
-    
-    /* Light/Dark Mode */
-    .dark-mode {
-        background-color: #222;
-        color: white;
-    }
-    
+/* Settings Page */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.work-item h2 a:hover {
-    color: #007bff;
+#toggleDark, #toggleLight {
+    font-size: 1.5em;
+    padding: 10px 20px;
 }
