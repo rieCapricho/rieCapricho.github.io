@@ -21,22 +21,14 @@ document.querySelectorAll(".sidebar li").forEach(item => {
     });
 });
 
-window.addEventListener("popstate", function(event) {
-    document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
-
-    if (event.state && event.state.page) {
-        document.getElementById(event.state.page).classList.remove("hidden");
-    } else {
-        document.querySelector(".landing").classList.remove("hidden");
-    }
+// Heart Button Click Counter
+let heartCount = 0;
+document.getElementById("heartBtn").addEventListener("click", function() {
+    heartCount++;
+    document.getElementById("heartCount").innerText = heartCount;
 });
 
-window.addEventListener("load", function() {
-    if (location.hash === "#home-page") {
-        document.querySelector(".landing").classList.add("hidden");
-        document.getElementById("home-page").classList.remove("hidden");
-    } else if (location.hash === "#works-page") {
-        document.querySelector(".landing").classList.add("hidden");
-        document.getElementById("works-page").classList.remove("hidden");
-    }
+// Light/Dark Mode Toggle
+document.getElementById("toggleTheme").addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode");
 });

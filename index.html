@@ -9,33 +9,36 @@
 </head>
 <body>
 
+    <!-- Landing Page -->
     <div class="landing">
         <h1 class="title">WELCOME TO MY <br> DIGITAL COURSE PORTFOLIO</h1>
         <button id="enterBtn">ENTER</button>
     </div>
 
+    <!-- Sidebar (Visible on All Pages) -->
+    <div class="sidebar">
+        <ul>
+            <li class="active" data-page="home"><i class="icon-home"></i> HOME</li>
+            <li data-page="works"><i class="icon-briefcase"></i> WORKS</li>
+            <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
+            <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
+        </ul>
+    </div>
+
+    <!-- Home Page (Updated Video Background) -->
     <div id="home-page" class="hidden">
         <div class="video-container">
             <video autoplay loop muted>
-                <source src="mapuavid.mp4" type="video/mp4">
+                <source src="MMCM video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
-
-        <div class="sidebar">
-            <ul>
-                <li class="active" data-page="home"><i class="icon-home"></i> HOME</li>
-                <li data-page="works"><i class="icon-briefcase"></i> WORKS</li>
-                <li data-page="about"><i class="icon-user"></i> ABOUT ME</li>
-                <li data-page="settings"><i class="icon-settings"></i> SETTINGS</li>
-            </ul>
-        </div>
-
         <div class="top-right">Home</div>
     </div>
 
+    <!-- Works Page -->
     <div id="works-page" class="hidden">
-        <h1>Works</h1>
+        <div class="top-right">Works</div>
         <div class="works-container">
             <div class="work-item">
                 <img src="ph tours.png" alt="Explore PH Tours">
@@ -54,6 +57,21 @@
                 <h2><a href="Capricho_A224_JS_ACT2/index.html">JavaScript Activity 2</a></h2>
             </div>
         </div>
+    </div>
+
+    <!-- About Me Page -->
+    <div id="about-page" class="hidden">
+        <div class="top-right">About Me</div>
+        <div class="about-container">
+            <img src="mapua.jpg" class="about-bg">
+            <button id="heartBtn">❤️ Send Hearts <span id="heartCount">0</span></button>
+        </div>
+    </div>
+
+    <!-- Settings Page -->
+    <div id="settings-page" class="hidden">
+        <div class="top-right">Settings</div>
+        <button id="toggleTheme">Toggle Light/Dark Mode</button>
     </div>
 
 </body>
