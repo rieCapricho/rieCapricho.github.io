@@ -10,32 +10,32 @@ body, html {
 }
 
 .landing {
-    background: url('MAPUA\ front.jpg') no-repeat center center/cover;
+    background: url('1.jpg') no-repeat center center/cover;
     width: 100%;
     height: 100vh;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .content {
     position: absolute;
-    top: 1%;
-    right: 15%;
+    top: 3%; /* Pushed to the uppermost part */
+    right: 5%; /* Aligned to the rightmost side */
     text-align: right;
     color: black;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 3em;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 button {
     position: absolute;
-    bottom: 15%;
+    bottom: 12%; /* Lower and centered */
     left: 50%;
     transform: translateX(-50%);
     padding: 14px 30px;
