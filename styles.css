@@ -306,8 +306,10 @@ video {
 }
 
 .sidebar-logo img {
-    width: 150px;   /* Adjust the width */
-    height: 100 px;
+    width: 50%;
+    max-width: 150px; /* Prevents the image from being too large */
+    display: block; /* Ensures proper positioning */
+    margin: 0 auto; /* Centers it horizontally */
 }
 
 
