@@ -48,3 +48,4 @@ document.getElementById("heartBtn").addEventListener("click", function() {
     document.getElementById("heartCount").innerText = heartCount;
 });
 
+

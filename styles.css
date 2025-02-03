@@ -154,6 +154,7 @@ video {
     border-radius: 10px;
 }
 
+/* Background image with 70% transparency */
 .about-bg {
     position: absolute;
     width: 100%;
@@ -163,12 +164,14 @@ video {
     z-index: -1;
 }
 
+/* Profile Picture */
 .profile-img {
     width: 180px;
     border-radius: 10px;
     margin-right: 20px;
 }
 
+/* Text Styling */
 .about-content {
     max-width: 500px;
 }
@@ -184,6 +187,7 @@ video {
     margin-bottom: 10px;
 }
 
+/* Send Hearts Button */
 #heartBtn {
     display: flex;
     align-items: center;
