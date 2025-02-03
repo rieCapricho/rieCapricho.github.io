@@ -307,7 +307,7 @@ video {
 
 .sidebar-logo img {
     width: 150px;   /* Adjust the width */
-    height: auto;   /* Keeps the aspect ratio */
+    height: 100 px;
 }
 
 
