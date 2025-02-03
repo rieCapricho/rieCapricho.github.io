@@ -1,25 +1,16 @@
-document.getElementById("enterBtn").addEventListener("click", function() {
-    // Update the browser history to allow back navigation
-    history.pushState({ page: "home" }, "Home", "#home");
+document.querySelectorAll(".sidebar li").forEach(item => {
+    item.addEventListener("click", function() {
+        document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
+        this.classList.add("active");
 
-    // Switch from landing page to home page
-    document.querySelector(".landing").classList.add("hidden");
-    document.getElementById("home-page").classList.remove("hidden");
-});
+        // Hide all sections
+        document.querySelectorAll("body > div").forEach(page => page.classList.add("hidden"));
 
-// Handle the back button to return to the landing page
-window.addEventListener("popstate", function(event) {
-    if (!event.state || event.state.page !== "home") {
-        // If there's no state or it's not the home page, show the landing page
-        document.querySelector(".landing").classList.remove("hidden");
-        document.getElementById("home-page").classList.add("hidden");
-    }
-});
-
-// Ensure correct page is shown on reload
-window.addEventListener("load", function() {
-    if (location.hash === "#home") {
-        document.querySelector(".landing").classList.add("hidden");
-        document.getElementById("home-page").classList.remove("hidden");
-    }
+        // Show the clicked page
+        if (this.textContent.trim() === "HOME") {
+            document.getElementById("home-page").classList.remove("hidden");
+        } else if (this.textContent.trim() === "WORKS") {
+            document.getElementById("works-page").classList.remove("hidden");
+        }
+    });
 });
