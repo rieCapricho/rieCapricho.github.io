@@ -326,7 +326,7 @@ video {
     justify-content: center;
 }
 
-/* Toggle Switch - Centered */
+/* Toggle Switch - Wrapper */
 .toggle-container {
     display: flex;
     align-items: center;
@@ -385,7 +385,6 @@ video {
 .dark-mode .about-content p {
     color: white;
 }
-
 
 
 
