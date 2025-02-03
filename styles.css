@@ -313,7 +313,18 @@ video {
 }
 
 /* Settings Page - Centered */
-
+.settings-container {
+    width: 100%;
+    margin: 180px auto; /* Centers the toggle */
+    text-align: center;
+    background: rgba(240, 248, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* Toggle Switch - Wrapper */
 .toggle-container {
