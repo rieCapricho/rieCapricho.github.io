@@ -76,16 +76,17 @@ video {
 
 /* Centered Text Over Video */
 .centered-text {
-    position: absolute;
+    width: 800px;
+    position: absolute; 
     top: 50%;
-    left: 50%;
+    left: 59%;
     transform: translate(-50%, -50%);
     font-size: 3.5em; /* Adjust for size */
     font-family: 'Times New Roman', serif; /* Similar to Mapúa */
     font-weight: bold;
-    color: #A6192E; /* Mapúa red */
+    color: #c62940; /* Mapúa red */
     text-transform: uppercase;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
     text-align: center;
 }
 
