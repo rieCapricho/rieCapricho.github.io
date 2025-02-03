@@ -9,7 +9,7 @@ document.querySelectorAll(".sidebar li").forEach(item => {
         document.querySelectorAll(".sidebar li").forEach(li => li.classList.remove("active"));
         this.classList.add("active");
 
-        document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
+        document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
 
         const pageId = this.getAttribute("data-page") + "-page";
         const pageElement = document.getElementById(pageId);
@@ -22,7 +22,7 @@ document.querySelectorAll(".sidebar li").forEach(item => {
 });
 
 window.addEventListener("popstate", function(event) {
-    document.querySelectorAll(".container").forEach(page => page.classList.add("hidden"));
+    document.querySelectorAll("body > div:not(.sidebar)").forEach(page => page.classList.add("hidden"));
 
     if (event.state && event.state.page) {
         document.getElementById(event.state.page).classList.remove("hidden");
